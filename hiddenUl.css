@@ -1,0 +1,16 @@
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul {
+    display: none !important;
+}
+
+div.list-bullet {
+    display: none !important;
+}
+
+ul.has-list-bullet {
+    padding-left: 0;
+}
+
+ul {
+    padding-left: 0 !important;
+}
+
