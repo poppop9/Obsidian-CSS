@@ -25,14 +25,16 @@ fonts initalization
 
 /* 代码块字体 */
 @font-face {
-	font-family: 'JetBrains Mono';
-	src: url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.woff2") format("woff2"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Regular.ttf") format("truetype");
+	font-family: 'JetBrainsMono';
+	/* src: url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.woff2") format("woff2"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Regular.ttf") format("truetype"); */
+	/* src: url('JetBrainsMono-Regular.ttf') format('truetype'); */
+	src: url('https://poppop9.github.io/JetBrainsMono-Regular.ttf');
 }
 
-/* 标题2字体 */
+/* 标题3字体 */
 @font-face {
-	font-family: 'mellow aaa';
-	src: url('ChillRoundF.ttf');
+	font-family: "BorderlineWhite";
+	src: url('https://poppop9.github.io/RampartOne-Regular.ttf') format('truetype');
 }
 
 @page {
@@ -717,6 +719,7 @@ span.cm-header.cm-header-2 {
 	color: #004faa;
 	font-weight: bold;
 	font-size: 1.86rem !important;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 	position: relative;
 	display: inline-block;
@@ -772,6 +775,7 @@ div.HyperMD-header.HyperMD-header-3.cm-line {
 
 span.cm-header.cm-header-3 {
 	font-size: 1.5rem !important;
+	font-family: "BorderlineWhite", sans-serif;
 }
 
 div.HyperMD-header.HyperMD-header-3.cm-line span.cm-header.cm-header-3:last-child:not(.cm-formatting-escape.cm-header.cm-header-3.cm-hmd-escape-backslash):not(span.cm-escape.cm-header.cm-header-3.cm-hmd-escape-char)::before {
@@ -795,6 +799,8 @@ h3 {
 	justify-content: center;
 	align-items: center;
 	font-size: 1.5rem !important;
+	font-family: "BorderlineWhite", sans-serif !important;
+
 	margin-block-start: 0.5rem;
 	margin-block-end: 0.1rem !important;
 	text-align: center;
@@ -861,10 +867,11 @@ h4::before {
 }
 
 .cm-s-obsidian .cm-line.HyperMD-header {
-    padding-top: 0;
+	padding-top: 0;
 }
 
-h4, .markdown-rendered h4 {
+h4,
+.markdown-rendered h4 {
 	margin-block-start: 0rem;
 	margin-block-end: 0.1rem !important;
 }
@@ -951,7 +958,7 @@ pre::before {
 
 /* 编辑模式下的代码块内代码设置字体 */
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
-	font-family: 'JetBrains Mono' !important;
+	font-family: 'JetBrainsMono' !important;
 	font-size: 16px;
 }
 
@@ -965,7 +972,7 @@ pre::before {
 
 /* 阅读模式下的代码块内代码设置字体 */
 .markdown-rendered pre code {
-	/* font-family: 'JetBrains Mono' !important; */
+	font-family: 'JetBrainsMono' !important;
 	font-size: 16px;
 }
 
@@ -1090,10 +1097,6 @@ div.markdown-reading-view .callout-content>pre {
 	/* margin-block-end: 0.5rem; */
 }
 
-div>ul {
-	padding-inline-start: 1.3rem !important;
-}
-
 /* 那个点 */
 .cm-list-1>.list-bullet::after {
 	background-color: #ed6c60;
@@ -1118,6 +1121,9 @@ div.HyperMD-list-line {
 }
 
 /* 阅读模式 */
+
+
+
 /* 一级无序列表 */
 .has-list-bullet>li>.list-bullet::after {
 	background-color: #ed6c60;
@@ -1322,6 +1328,10 @@ blockquote {
 /* callout */
 div.callout-content {
 	margin-top: 0.5rem;
+}
+
+div.callout-title div.callout-title-inner {
+	font-weight: bold;
 }
 
 /* 分割线 */
